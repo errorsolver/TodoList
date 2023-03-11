@@ -1,0 +1,15 @@
+<div>
+    <p>todo-list works</p>
+    <ul *ngFor="let todo1 of todo;">
+        <li>
+            <div class="list" contenteditable="true">{{todo1.Id}}</div>
+            <div class="list" contenteditable="true">{{todo1.Name}}</div>
+            <div class="list" contenteditable="true">{{todo1.IsDone}}</div>
+            <!-- <input type="text" placeholder="{{todo.Name}}">
+            <input type="text" placeholder="{{todo.IsDone}}" class="no-outline" >-->
+
+            <button>Apply</button>
+            <button>Remove</button>
+        </li>
+    </ul>
+</div>

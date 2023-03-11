@@ -1,0 +1,22 @@
+<style>
+    * {
+        width: 500px;
+    }
+
+    .content {
+        margin: auto;
+        background-color: grey;
+    }
+
+    input {
+        outline: none;
+        border: none;
+    }
+</style>
+
+<div class="content">
+    <p contenteditable="true">todo works!</p>
+    <!-- (editTodo)="todos" -->
+    <app-todo-form></app-todo-form>
+    <app-todo-list [todo]="todos" ></app-todo-list>
+</div>
